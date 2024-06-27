@@ -29,31 +29,31 @@ USAGE:
 
 2. Use the DropDownMultiSelect widget.
 
- DropDownMultiSelect<String>(
-  options: _options,
-  selectedValues: _selectedValues,
-  onChanged: (List<String> newValue) {
-    setState(() {
-      _selectedValues = newValue;
-    });
-  },
-  whenEmpty: 'Select options',
-  childBuilder: (List<String> selectedItems) {
+    DropDownMultiSelect<String>(
+   options: _options,
+   selectedValues: _selectedValues,
+   onChanged: (List<String> newValue) {
+     setState(() {
+       _selectedValues = newValue;
+     });
+   },
+    whenEmpty: 'Select options',
+    childBuilder: (List<String> selectedItems) {
     return Text(
       selectedItems.isEmpty ? 'No items selected' : selectedItems.join(', '),
       style: TextStyle(color: Colors.blue),
     );
-  },
-  menuItembuilder: (String option) {
+   },
+    menuItembuilder: (String option) {
     return ListTile(
       title: Text(option),
       trailing: Icon(Icons.check_box_outline_blank),
     );
-  },
-  icon: Icon(Icons.list),
-  hintStyle: TextStyle(color: Colors.grey),
-  selected_values_style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
-);
+   },
+   icon: Icon(Icons.list),
+     hintStyle: TextStyle(color: Colors.grey),
+     selected_values_style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+    );
 
    
 ## Customization
@@ -78,29 +78,29 @@ You can customize the dropdown appearance and behavior using various parameters:
 ##  Example Customization
 Here's an example of how you can customize the dropdown:
 
-DropDownMultiSelect<String>(
-  options: _options,
-  selectedValues: _selectedValues,
-  onChanged: (List<String> newValue) {
-    setState(() {
+       DropDownMultiSelect<String>(
+       options: _options,
+       selectedValues: _selectedValues,
+       onChanged: (List<String> newValue) {
+         setState(() {
       _selectedValues = newValue;
-    });
-  },
-  whenEmpty: 'Select options',
-  childBuilder: (List<String> selectedItems) {
-    return Text(
-      selectedItems.isEmpty ? 'No items selected' : selectedItems.join(', '),
-      style: TextStyle(color: Colors.blue),
-    );
-  },
-  menuItembuilder: (String option) {
-    return ListTile(
-      title: Text(option),
-      trailing: Icon(Icons.check_box_outline_blank),
-    );
-  },
-  icon: Icon(Icons.list),
-  hintStyle: TextStyle(color: Colors.grey),
-  selected_values_style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
-);
+      });
+     },
+      whenEmpty: 'Select options',
+        childBuilder: (List<String> selectedItems) {
+          return Text(
+            selectedItems.isEmpty ? 'No items selected' : selectedItems.join(', '),
+            style: TextStyle(color: Colors.blue),
+          );
+        },
+        menuItembuilder: (String option) {
+          return ListTile(
+            title: Text(option),
+            trailing: Icon(Icons.check_box_outline_blank),
+          );
+        },
+        icon: Icon(Icons.list),
+        hintStyle: TextStyle(color: Colors.grey),
+        selected_values_style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+      );
 
