@@ -1,0 +1,19 @@
+name: select_all_dropdown
+description: A customizable dropdown multi-select widget for Flutter.
+version: 0.1.0
+author: Ashutosh Tiwari <your.email@example.com>
+homepage: https://yourhomepage.com
+repository: https://github.com/Ashutosh980/select_all_dropdown
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  states_rebuilder: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lints: ^2.0.0
