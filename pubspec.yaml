@@ -1,8 +1,7 @@
 name: select_all_dropdown
-description: A customizable dropdown multi-select widget for Flutter.
-version: 0.1.0
-author: Ashutosh Tiwari <your.email@example.com>
-homepage: https://yourhomepage.com
+description: select_all_dropdown is a highly customizable and user-friendly Flutter package that provides a multi-select dropdown with a convenient "Select All" feature. It allows users to select multiple items from a list with ease and efficiency, making it an ideal choice for forms, filtering options, and settings screens.
+version: 0.1.1
+homepage: www.linkedin.com/in/ashutosh-01-tiwari
 repository: https://github.com/Ashutosh980/select_all_dropdown
 
 environment:
