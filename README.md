@@ -29,31 +29,31 @@ USAGE:
 
 2. Use the DropDownMultiSelect widget.
 
-    DropDownMultiSelect<String>(
-   options: _options,
-   selectedValues: _selectedValues,
-   onChanged: (List<String> newValue) {
-     setState(() {
-       _selectedValues = newValue;
-     });
-   },
-    whenEmpty: 'Select options',
-    childBuilder: (List<String> selectedItems) {
-    return Text(
-      selectedItems.isEmpty ? 'No items selected' : selectedItems.join(', '),
-      style: TextStyle(color: Colors.blue),
-    );
-   },
-    menuItembuilder: (String option) {
-    return ListTile(
-      title: Text(option),
-      trailing: Icon(Icons.check_box_outline_blank),
-    );
-   },
-   icon: Icon(Icons.list),
-     hintStyle: TextStyle(color: Colors.grey),
-     selected_values_style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
-    );
+        DropDownMultiSelect<String>(
+       options: _options,
+       selectedValues: _selectedValues,
+       onChanged: (List<String> newValue) {
+         setState(() {
+           _selectedValues = newValue;
+         });
+       },
+        whenEmpty: 'Select options',
+        childBuilder: (List<String> selectedItems) {
+        return Text(
+          selectedItems.isEmpty ? 'No items selected' : selectedItems.join(', '),
+          style: TextStyle(color: Colors.blue),
+        );
+       },
+        menuItembuilder: (String option) {
+        return ListTile(
+          title: Text(option),
+          trailing: Icon(Icons.check_box_outline_blank),
+        );
+       },
+       icon: Icon(Icons.list),
+         hintStyle: TextStyle(color: Colors.grey),
+         selected_values_style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+        );
 
    
 ## Customization
