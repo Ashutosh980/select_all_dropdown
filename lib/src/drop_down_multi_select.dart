@@ -58,7 +58,7 @@ class DropDownMultiSelect<T> extends StatefulWidget {
   final Widget? icon;
   final TextStyle? hintStyle;
   final Widget? hint;
-  final TextStyle? selected_values_style;
+  final TextStyle? selectedValuesStyle;
 
   const DropDownMultiSelect({
     Key? key,
@@ -70,7 +70,7 @@ class DropDownMultiSelect<T> extends StatefulWidget {
     this.hint,
     this.hintStyle,
     this.childBuilder,
-    this.selected_values_style,
+    this.selectedValuesStyle,
     this.menuItembuilder,
     this.isDense = true,
     this.enabled = true,
@@ -213,7 +213,7 @@ class _DropDownMultiSelectState<T> extends State<DropDownMultiSelect<T>> {
                                           children: [
                                             Text(
                                               value.toString(),
-                                              style: widget.selected_values_style,
+                                              style: widget.selectedValuesStyle,
                                             ),
                                             SizedBox(width: 4),
                                             GestureDetector(
@@ -232,7 +232,7 @@ class _DropDownMultiSelectState<T> extends State<DropDownMultiSelect<T>> {
                                 )
                               : Text(
                                   widget.whenEmpty ?? '',
-                                  style: widget.selected_values_style,
+                                  style: widget.selectedValuesStyle,
                                 );
                     }),
                   ),
